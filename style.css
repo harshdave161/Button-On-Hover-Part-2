@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #2d3436;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn{
+    display: block;
+    margin: 30px 0;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 60px;
+    color: white;
+    border: 2px solid #ff7675;
+    position: relative;
+    overflow: hidden;
+    transition:  all 1s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background: #ff7675;
+    transition: 0.3s;
+    color: #2d3436;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.btn1::before{
+    height: 110%;
+    width: 0%;
+}
+.btn1:hover::before{
+    width: 110%;
+}
+
+
+.btn2::before{
+    height: 0%;
+    width: 110%;
+}
+.btn2:hover::before{
+    height: 110%;
+}
+
+.btn3::before{
+    height: 0%;
+    width: 110%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.btn3:hover::before{
+    height: 390%;
+    
+}
+
+
+.btn4::before{
+    height: 0%;
+    width: 110%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn4:hover::before{
+    height: 390%;
+}
+.header,.Footer{
+    margin: 20px 0px;
+    text-shadow: 0px 5px 15px #ffffff70;
+    font-size: 1.6em;
+    color: #55efc4;
+}
